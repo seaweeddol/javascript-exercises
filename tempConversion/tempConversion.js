@@ -4,7 +4,8 @@ const ftoc = function(temperature) {
 }
 
 const ctof = function(temperature) {
-
+  temperature = +(temperature * 5/9 + 32).toFixed(1);
+  return temperature;
 }
 
 module.exports = {

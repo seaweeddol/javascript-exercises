@@ -7,13 +7,13 @@ describe('ftoc', function() {
   it('rounds to 1 decimal', function() {
     expect(ftoc(100)).toEqual(37.8);
   });
-  xit('works with negatives', function() {
+  it('works with negatives', function() {
     expect(ftoc(-100)).toEqual(-73.3);
   });
 });
 
 describe('ctof', function() {
-  xit('works', function() {
+  it('works', function() {
     expect(ctof(0)).toEqual(32);
   });
   xit('rounds to 1 decimal', function() {
