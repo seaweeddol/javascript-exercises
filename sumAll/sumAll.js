@@ -3,7 +3,7 @@ const sumAll = function(firstNum, secondNum) {
   let startNum = firstNum;
   let endNum = secondNum;
 
-  if(firstNum < 0 || secondNum < 0 || typeof firstNum == "string" || typeof secondNum == "string"){
+  if(firstNum < 0 || secondNum < 0 || typeof firstNum != "number" || typeof secondNum != "number"){
     return 'ERROR';
   } else if(secondNum < firstNum){
     startNum = secondNum;
