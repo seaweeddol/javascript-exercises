@@ -10,10 +10,10 @@ describe('repeatString', function() {
   xit('repeats the string 1 times', function() {
     expect(repeatString('hey', 1)).toEqual('hey');
   });
-  it('repeats the string 0 times', function() {
+  xit('repeats the string 0 times', function() {
     expect(repeatString('hey', 0)).toEqual('');
   });
-  xit('returns ERROR with negative numbers', function() {
+  it('returns ERROR with negative numbers', function() {
     expect(repeatString('hey', -1)).toEqual('ERROR');
   });
 });
