@@ -1,8 +1,15 @@
 const sumAll = function(firstNum, secondNum) {
   let sum = 0;
+  let startNum = firstNum;
+  let endNum = secondNum;
 
-  for(firstNum; firstNum <= secondNum; firstNum++){
-    sum += firstNum;
+  if(secondNum < firstNum){
+    startNum = secondNum;
+    endNum = firstNum;
+  }
+
+  for(startNum; startNum <= endNum; startNum++){
+    sum += startNum;
   }
   return sum;
 }
