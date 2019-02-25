@@ -30,8 +30,15 @@ function power(a, b) {
 	return total;
 }
 
-function factorial() {
-
+function factorial(num) {
+	if(num > 0){
+		for(let i = num - 1; i > 0; i--){
+			num *= i;
+		}
+		return num;
+	} else {
+		return 1;
+	}
 }
 
 module.exports = {
