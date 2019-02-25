@@ -2,12 +2,18 @@ function add (a, b) {
 	return a + b;
 }
 
-function subtract () {
-
+function subtract (a, b) {
+return a - b;
 }
 
-function sum () {
-
+function sum (arr) {
+	let sum = 0;
+	arr.forEach(function(num) {
+		if(num) {
+			sum += num;
+		}
+	});
+	return sum;
 }
 
 function multiply () {
