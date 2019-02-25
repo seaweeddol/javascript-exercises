@@ -22,8 +22,12 @@ function multiply (arr) {
 	return total;
 }
 
-function power() {
-
+function power(a, b) {
+	let total = 1;
+	for(let i = 0; i < b; i++){
+		total *= a;
+	}
+	return total;
 }
 
 function factorial() {
