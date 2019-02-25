@@ -9,9 +9,7 @@ return a - b;
 function sum (arr) {
 	let sum = 0;
 	arr.forEach(function(num) {
-		if(num) {
-			sum += num;
-		}
+		sum += num;
 	});
 	return sum;
 }
